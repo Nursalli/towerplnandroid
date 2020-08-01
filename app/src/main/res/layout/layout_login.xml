@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:background="#FBF7F7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_marginTop="110dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_logo_launcher_round"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/login"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:drawableLeft="@drawable/ic_user"
+        android:background="@drawable/ic_background_input"
+        android:hint="Masukkan Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        />
+
+        <EditText
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/ic_pass"
+            android:background="@drawable/ic_background_input"
+            android:hint="Masukkan Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_background_submit"
+            android:textColor="#fff"
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
